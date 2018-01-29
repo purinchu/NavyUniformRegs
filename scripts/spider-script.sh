@@ -16,3 +16,8 @@ URL="$BASE_URL/Pages/default.aspx"
 
 wget $WGET_FLAGS $URL
 
+if [ $? = 6 ]; then
+    # NPC website has CAC-protected areas that wget will trip against and fail to download from,
+    # and wget duly gives an error which we will promptly ignore
+    exit 0
+fi

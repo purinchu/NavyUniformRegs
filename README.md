@@ -58,6 +58,9 @@ This is how I did it:
         after you've loaded up the project in Android Studio.
 2. Import this ZIP file contents as a project in Android Studio.
 
+But, you probably just want to run the `scripts/prepare-for-build.sh` script
+which should more or less mirror those steps.
+
 Note that I'm not a Java wizard, the last time I did anything appreciable in
 Java, the `ant` tool still had the new car smell.  So while I've tried to
 avoid over-importing my local project settings into this ZIP file, I may have
